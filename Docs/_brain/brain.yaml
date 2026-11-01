@@ -1,0 +1,42 @@
+# Пути документов считаются от Docs/, code: в документе — от корня проекта.
+# Замените title и side при адаптации; несуществующие корни кода не добавляйте.
+title: Новый проект
+side: standalone
+domains:
+  Project:
+    title: Проект
+    hint: назначение, архитектура, источники истины и проверки
+  Memory:
+    title: Память
+    hint: долгоживущие решения и незавершённая работа
+
+# Индексатор символов поддерживает C#. Например, ../Assets/Scripts или ../src.
+# Пустой список работает в новом репозитории без исходников.
+symbols_index:
+  roots: []
+coverage:
+  min_files: 1
+  code: []
+
+# Необязательно: связанный репозиторий; пути считаются от Docs/.
+# counterpart:
+#   side: server
+#   root: ../../related-repository/Docs
+#   index: ../../related-repository/Docs/INDEX.md
+
+docs:
+  PROJECT.md:
+    domain: Project
+    hint: стартовая карта продукта; заполнить по реальному проекту
+  ARCHITECTURE.md:
+    domain: Project
+    hint: границы модулей, поток данных, контракты и ключевые файлы
+  Memory/DECISIONS.md:
+    domain: Memory
+    hint: причины действующих архитектурных решений
+  Memory/HANDOFF.md:
+    domain: Memory
+    hint: продолжить незавершённую задачу в следующей сессии
+
+# Необязательные каталоги данных, фикстур и миграций; не копируйте реальные данные сюда.
+data: {}

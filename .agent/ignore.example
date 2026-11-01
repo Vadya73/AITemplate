@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+.claude/settings.local.json
+CLAUDE.local.md
+.obsidian/workspace*.json
+.obsidian/cache/
+.agent/*.local.json
+.agent/reports/

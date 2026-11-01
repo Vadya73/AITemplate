@@ -1,0 +1,3 @@
+# Карта символов C#. Генерируется _brain/build.py — руками не править.
+# Эвристический индекс C#: rg -i "SymbolName" Docs/_brain/index/symbols.tsv; перепроверяй исходник.
+# symbol	kind	owner	path	line

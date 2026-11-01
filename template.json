@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "kind": "coding-agent-template",
+  "template_id": "portable-agent-workspace",
+  "version": "2.0.0",
+  "files": {
+    ".agent/evals/suite.json": {
+      "policy": "managed",
+      "sha256": "ec57e570fb485a7c8392b186034adf011584037d9166a100e16843dc6ea2b897"
+    },
+    ".agent/ignore.example": {
+      "policy": "managed",
+      "sha256": "00d5634e75705cc32866d9026cf42caa8d6238fcc78bbb2de545c2b4276d090e"
+    },
+    ".agent/project.json": {
+      "policy": "seed",
+      "sha256": "d56d191ffe86004b82ca084f90e809005b1a3048a24806a1ed88545cab2f0043"
+    },
+    ".agent/workflows/adapt-project.md": {
+      "policy": "managed",
+      "sha256": "52f6bfee56940c75db62dcc36c09dd46966ac2cd415b4a4e770944f87c8a7a21"
+    },
+    ".agent/workflows/document-system.md": {
+      "policy": "managed",
+      "sha256": "cff6c85fd3a0e306ca396a0af134f4b3386d65a0289073ce61a930e5978c5240"
+    },
+    ".agent/workflows/unity-validation.md": {
+      "policy": "managed",
+      "sha256": "9846b9b18b0bcbd61b7b6d7e641537d5aee6bc8060ce48fd79f3606cc7a8bbc5"
+    },
+    ".agents/skills/adapt-project/SKILL.md": {
+      "policy": "managed",
+      "sha256": "181ed804e4bb78ff5303feaa2ec5a02203338b36661cc515b42727bc10388438"
+    },
+    ".agents/skills/document-system/SKILL.md": {
+      "policy": "managed",
+      "sha256": "677a14eed13416b9923cc99a9aaf2d2647e17d030411792238fdcbee57bac4cc"
+    },
+    ".agents/skills/unity-validation/SKILL.md": {
+      "policy": "managed",
+      "sha256": "c42d813128210202ec1aa6fe334a23462c8a5ca3e9e7314e951d0bb627b2ed8b"
+    },
+    ".claude/hooks/sync-docs.py": {
+      "policy": "managed",
+      "sha256": "f63232a6b7fc1ee9cad1b856dcfbae1961cbbf52d7bbf404d56fdabd8ff124b7"
+    },
+    ".claude/settings.json": {
+      "policy": "seed",
+      "sha256": "0ee5778cf5e8c244b440207062736f41ed6bda122c74491e69f3c8dffbc12dbe"
+    },
+    ".claude/skills/adapt-project/SKILL.md": {
+      "policy": "managed",
+      "sha256": "181ed804e4bb78ff5303feaa2ec5a02203338b36661cc515b42727bc10388438"
+    },
+    ".claude/skills/document-system/SKILL.md": {
+      "policy": "managed",
+      "sha256": "677a14eed13416b9923cc99a9aaf2d2647e17d030411792238fdcbee57bac4cc"
+    },
+    ".claude/skills/unity-validation/SKILL.md": {
+      "policy": "managed",
+      "sha256": "c42d813128210202ec1aa6fe334a23462c8a5ca3e9e7314e951d0bb627b2ed8b"
+    },
+    ".obsidian/app.json": {
+      "policy": "seed",
+      "sha256": "23f357fca5dc871dda177ddb75bd4a388a6e6aab7da30ff2e509d54eaea17f63"
+    },
+    ".obsidian/core-plugins.json": {
+      "policy": "seed",
+      "sha256": "5682e01fe259d4b60253d4405d198e128ebec910c5ed385a3169c95823c813e7"
+    },
+    "AGENTS.md": {
+      "policy": "managed",
+      "sha256": "7ea1c785874f93c324a971e4688df3dbcddc2c787a32a990cc185f7e9b1a74f6"
+    },
+    "CLAUDE.md": {
+      "policy": "managed",
+      "sha256": "b38d35bc7b8922dae6198429ab22f099e0e6983b9faab44fa4adc2118a98a500"
+    },
+    "Docs/_brain/brain.yaml": {
+      "policy": "seed",
+      "sha256": "c9762d5c2b479297f7be83c4ace4a71b7156672a0138c628cf11e54d454420a7"
+    },
+    "Docs/_brain/build.py": {
+      "policy": "managed",
+      "sha256": "af3b9d612d78a237236853076e35da76aa41287edf2e6700e41a279fdba87a4a"
+    },
+    "Docs/_brain/DATA.md": {
+      "policy": "seed",
+      "sha256": "65b517cfe8771ce5e18cee533c7f49eb280fb3bfabc4049f34b83e03f93c815f"
+    },
+    "Docs/_brain/glossary.md": {
+      "policy": "seed",
+      "sha256": "8bbb19bb910f102bb958aa54d55c507b6103bf9bbefdbfc6f9c6df1e02534650"
+    },
+    "Docs/_brain/index/symbols.tsv": {
+      "policy": "seed",
+      "sha256": "bb6bd7a02a6592e47d1abf72bd85f98ece44834703c4f3224cbabe8e860832cf"
+    },
+    "Docs/_brain/lib/coverage.py": {
+      "policy": "managed",
+      "sha256": "4e49b12276d0908ff82d8d219310d329005a2207261473e3e3b62b948c984ca6"
+    },
+    "Docs/_brain/lib/extract.py": {
+      "policy": "managed",
+      "sha256": "5fe8e4fe845257784c43ac8e090ff107ca24d984a007282eacc0eccec4e925b8"
+    },
+    "Docs/_brain/lib/fingerprints.py": {
+      "policy": "managed",
+      "sha256": "db2786294493f17659f72a179d1d7a5bcbbac4db3980743f3cdbf3d127e909cf"
+    },
+    "Docs/_brain/lib/frontmatter.py": {
+      "policy": "managed",
+      "sha256": "fb00f7501f9cb8da4ccf1df050363284adec4dd9f20887134ca57b215ea2bf0c"
+    },
+    "Docs/_brain/lib/links.py": {
+      "policy": "managed",
+      "sha256": "d9d1e1ec2ece7eedf5518dfdfe675f7160cc427373ae8fe137596a8f3dd88c2b"
+    },
+    "Docs/_brain/lib/render.py": {
+      "policy": "managed",
+      "sha256": "4e3664591ec9f022eeab0b296c5a1ef547bcb48b2ddd9a287d1509f6491b5b9c"
+    },
+    "Docs/_brain/lib/stale.py": {
+      "policy": "managed",
+      "sha256": "e10540d16ee637cbc35bf0e579606ef1f3e63bee8c5327177a0262e850b31a7e"
+    },
+    "Docs/_brain/lib/symbols.py": {
+      "policy": "managed",
+      "sha256": "8b5b358e6e9a6d6af7db7af48cf269ac557f966deb5349617c0f966f20583fd2"
+    },
+    "Docs/_brain/playbooks/add-new-mechanic.md": {
+      "policy": "managed",
+      "sha256": "b69b465ed85df24ad4812d464cde95b91c8da350732f5d71cb4e4ffe123b824f"
+    },
+    "Docs/_brain/playbooks/add-resource.md": {
+      "policy": "managed",
+      "sha256": "12d81caa2e8f2a488fd592be3d75929ef4154a47301f2b6dd5543d57d269ef5e"
+    },
+    "Docs/_brain/playbooks/add-text-or-language.md": {
+      "policy": "managed",
+      "sha256": "978f0ad1988d915441dd159d4f83a71ecd9cb667a10d8de4917cebc8967dc614"
+    },
+    "Docs/_brain/playbooks/document-a-mechanic.md": {
+      "policy": "managed",
+      "sha256": "608921f5bd257c8aacde9a8984762a6d09e1fc176a45399f2a7e4604fc96d02e"
+    },
+    "Docs/_brain/playbooks/extend-protocol.md": {
+      "policy": "managed",
+      "sha256": "213972bf7d323c1a8719ac6d894c5283934533e2e8c507d48f0479ff7a54624a"
+    },
+    "Docs/_brain/README.md": {
+      "policy": "managed",
+      "sha256": "352c117e5bc639c5345bf2974cfffd61aa3439714e879271ed0a70d84b0b963a"
+    },
+    "Docs/_brain/registries/ConfigKeys.md": {
+      "policy": "seed",
+      "sha256": "45b7b136b824933c09448461d5840c6a4bc5d0e103f145061ca627784479fa82"
+    },
+    "Docs/_brain/registries/Coverage.md": {
+      "policy": "seed",
+      "sha256": "6db67b9ea43f52e232981a4cfe227a1b13eecb774a17d4e52a26d9798ef9f373"
+    },
+    "Docs/_brain/registries/DbTables.md": {
+      "policy": "seed",
+      "sha256": "3363db99d85342051e252025032c99188c34699f3c19a6c9d752152ec8505b5a"
+    },
+    "Docs/_brain/registries/Handlers.md": {
+      "policy": "seed",
+      "sha256": "a4ed056c60d3d2e31fdb3f695e554520a2001ba8777363655aff30df60a94168"
+    },
+    "Docs/_brain/registries/Pitfalls.md": {
+      "policy": "seed",
+      "sha256": "32af2176d0569f7a145d9e0da17ddf472d0b49a01c1f87f8b28db88abcf210fb"
+    },
+    "Docs/_brain/registries/ProtocolKeys.md": {
+      "policy": "seed",
+      "sha256": "4e33274c39d77e1bb55fcd44e1a8cda2ff4956d1225dffed0e606d653c7ff61f"
+    },
+    "Docs/_brain/registries/Resources.md": {
+      "policy": "seed",
+      "sha256": "4bb321519785e98c4286b3e205eb312c63894ae41c9069ba0f6b826342b51c9c"
+    },
+    "Docs/_brain/registries/Stale.md": {
+      "policy": "seed",
+      "sha256": "dc7ce0c2e39c177aa0a69907577210547b3d7e00967ca8d49184eec412d39022"
+    },
+    "Docs/_brain/requirements.txt": {
+      "policy": "managed",
+      "sha256": "b4603b9468ade4d639d2c6f73b89d50e1fa5d227c73ab15be0382cca478513e6"
+    },
+    "Docs/_brain/templates/mechanic.md": {
+      "policy": "managed",
+      "sha256": "0fbab564bcfdea804fed90540276b445a43c27f59899d6d0795351173f1ea9ac"
+    },
+    "Docs/_brain/tests/test_brain.py": {
+      "policy": "managed",
+      "sha256": "933a8a090e80e1d8e43bdf69ca87ba739052dc96b1cd1ed405e25a6588a1618e"
+    },
+    "Docs/_brain/tests/test_tools.py": {
+      "policy": "managed",
+      "sha256": "8ee80568b3b105a7906ecc2fbff3c1f7c0c786b138c88920dc30601e77156a0c"
+    },
+    "Docs/agent-rules/CSHARP.md": {
+      "policy": "managed",
+      "sha256": "372c57bb696f8e7065381fc87bc6a9ef590bed99718ca51720294f55d914e761"
+    },
+    "Docs/agent-rules/EVALUATION.md": {
+      "policy": "managed",
+      "sha256": "429a6d3696f20ec8710eba6a28477e121c8400ebe6e14ef09e45f5405a6ee2c8"
+    },
+    "Docs/agent-rules/MIGRATION.md": {
+      "policy": "managed",
+      "sha256": "9e74755413238a0d63242dd192e5a20b1323d17fad4e65956a4b2f7fbf6094d6"
+    },
+    "Docs/agent-rules/OPERATIONS.md": {
+      "policy": "managed",
+      "sha256": "4c1e1c04f7bd20ba32badbdb3823d7273d7c6aa41517704f5b86855b8c677e61"
+    },
+    "Docs/agent-rules/PROJECT.md": {
+      "policy": "seed",
+      "sha256": "cfd0983c57e15f6cc3d36f00059b3610c03600ed42441aef32b015b1885edb68"
+    },
+    "Docs/agent-rules/SETUP.md": {
+      "policy": "managed",
+      "sha256": "ccba748bb30b197bcc504a560c39ac2d5c3cdaee07878e04509e577009902cfb"
+    },
+    "Docs/agent-rules/UNITY.md": {
+      "policy": "managed",
+      "sha256": "71cb474688b672842e67b88b09405297b1ed0e71a3c4f8e8d2f6241927e736ce"
+    },
+    "Docs/agent-rules/WORKFLOW.md": {
+      "policy": "managed",
+      "sha256": "64bcf378e4377ad78e7b9a35be715b162526cda6aefe02709d7b8b7a76ec4c92"
+    },
+    "Docs/ARCHITECTURE.md": {
+      "policy": "seed",
+      "sha256": "ec9f36fd29b6d4ac185598d75f21a0759792bb164063c11911bb59ec23fe5e8e"
+    },
+    "Docs/Guides/UNITY_COMPOSITION_GUIDE.md": {
+      "policy": "managed",
+      "sha256": "fddd15f736d677eaca06fde5ed453b3b7bb4dac752b949407e7d3bb99b6f6e53"
+    },
+    "Docs/INDEX.md": {
+      "policy": "seed",
+      "sha256": "e679dc4df819d43df0e878870535e3ac85f35d09fb1dfd43c2e6f57c06d2ae8d"
+    },
+    "Docs/Memory/DECISIONS.md": {
+      "policy": "seed",
+      "sha256": "14b5e329bcaf88a6d130b662cfeba0275936932a70e5ee993e185520bce2573a"
+    },
+    "Docs/Memory/HANDOFF.md": {
+      "policy": "seed",
+      "sha256": "f860a86f26d44a09fea2551a6224f389c1de4155a8e877df65ac1557f2bf1869"
+    },
+    "Docs/PROJECT.md": {
+      "policy": "seed",
+      "sha256": "fd9dfc862546737c583102bd77196cada3eeba36f27a8036785670d4ee5a2ff1"
+    },
+    "Scripts/agent.py": {
+      "policy": "managed",
+      "sha256": "1b6e0ed7e88b164e9557a11c7c19f787f2496ae03b30a7d46572960518d25de8"
+    },
+    "Scripts/agentlib/checks.py": {
+      "policy": "managed",
+      "sha256": "32ef8b9a4cd391bb96757ce6e803d246e74e32f04f8514ec6e436b25a52ff98a"
+    },
+    "Scripts/agentlib/common.py": {
+      "policy": "managed",
+      "sha256": "d158b3cb435bb4896f4d37f2b2fb62166cb16dc2fcda49ddccd524aacde49cba"
+    },
+    "Scripts/agentlib/evals.py": {
+      "policy": "managed",
+      "sha256": "c10c66e13be5be99008dc01ad3edfaccc1e1048ca202236a657d6889a0aa996f"
+    },
+    "Scripts/agentlib/hook.py": {
+      "policy": "managed",
+      "sha256": "141b74bba21716ee233e8cbee2419c1332b441a1ba8288c3612958974b78d829"
+    },
+    "Scripts/agentlib/install.py": {
+      "policy": "managed",
+      "sha256": "c2c0bf9b59b9d0804ed4122b22382352015b1bc57e0aab817bb72488e538ac82"
+    },
+    "Scripts/eval_agents.py": {
+      "policy": "managed",
+      "sha256": "f728c2fbabe815d57078e1b536d36e5872613c10d7726365c70eb54cb4723e17"
+    }
+  }
+}

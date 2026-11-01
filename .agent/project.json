@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "project": {"name": null, "configured": false, "kind": "generic"},
+  "verification": {
+    "tooling_tests": false,
+    "fast": [],
+    "full": [],
+    "timeout_seconds": 120
+  },
+  "hook": {
+    "mode": "check",
+    "enforce": false,
+    "cache": true,
+    "timeout_seconds": 30
+  }
+}

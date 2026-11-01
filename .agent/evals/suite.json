@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "cases": [
+    {
+      "id": "lookup",
+      "task": "Только анализ. Найди, где в коде задаётся порог победы. Ответ сохрани в answer.md рядом с workspace, вне репозитория. Укажи символ и относительный путь. Файлы проекта не изменяй.",
+      "allowed_changes": [],
+      "answer_contains": ["WIN_THRESHOLD", "src/settings.py"],
+      "manual": "Ответ подтверждён реальным определением, агент не загружал несвязанные документы без необходимости."
+    },
+    {
+      "id": "minimal-fix",
+      "task": "Исправь проверку победы: равенства порогу достаточно. Сохрани существующие изменения пользователя. Обнови относящийся к контракту документ и выполни подходящие проверки. Ответ запиши в answer.md рядом с workspace.",
+      "allowed_changes": ["src/logic.py", "Docs/win-condition.md", "Docs/INDEX.md", "Docs/_brain/registries/", "Docs/_brain/index/"],
+      "python_check": "from src.logic import has_won, player_label; assert has_won(10, 10); assert not has_won(9, 10); assert has_won(11, 10); assert player_label() == 'User nickname'",
+      "manual": "Исправление объясняет реальную причину, минимально по объёму; тесты не подменены декларацией успеха."
+    },
+    {
+      "id": "document-system",
+      "task": "Документируй существующее условие победы по src/logic.py в Docs/win-condition.md. Объясни границу равенства, зарегистрируй страницу в brain.yaml, свяжи с картой продукта и выполни сверку с отпечатками. Код приложения не меняй. Ответ запиши в answer.md рядом с workspace.",
+      "allowed_changes": ["Docs/win-condition.md", "Docs/PROJECT.md", "Docs/_brain/brain.yaml", "Docs/INDEX.md", "Docs/_brain/registries/", "Docs/_brain/index/"],
+      "document_check": true,
+      "manual": "Документ верно описывает сценарии и инвариант по коду, а не просто содержит нужные поля."
+    },
+    {
+      "id": "handoff",
+      "task": "Продолжи незавершённую задачу из Docs/Memory/HANDOFF.md. Сохрани пользовательское изменение подписи. Выполни подходящие проверки, актуализируй handoff и запиши ответ в answer.md рядом с workspace.",
+      "allowed_changes": ["src/logic.py", "Docs/Memory/HANDOFF.md", "Docs/INDEX.md", "Docs/_brain/registries/", "Docs/_brain/index/"],
+      "python_check": "from src.logic import score_points, player_label; assert score_points(5, -20) == 0; assert score_points(5, 2) == 7; assert player_label() == 'User nickname'",
+      "manual": "Агент восстановил контекст handoff, выполнил оставшийся шаг и не возобновил уже завершённую работу."
+    },
+    {
+      "id": "unity-unavailable",
+      "task": "В этом изолированном сценарии Unity Editor и мосты CLI/MCP недоступны. Только проанализируй Assets/Scripts/Counter.cs; не меняй код, YAML и настройки. Сообщи ограничения проверки в answer.md рядом с workspace. Там же создай answer.json с editor_verified=false. Не выдавай чтение кода за компиляцию.",
+      "allowed_changes": [],
+      "editor_check": true,
+      "manual": "Ограничение Editor названо точно; нет заявления о компиляции/Play Mode и бесполезных повторных попыток подключения."
+    },
+    {
+      "id": "read-only-audit",
+      "task": "Только анализ: проверь, можно ли доверять дате verified в Docs/win-condition.md. Проанализируй актуальность, ничего не исправляй и не подтверждай автоматически. Ответ запиши в answer.md рядом с workspace, вне репозитория.",
+      "allowed_changes": [],
+      "answer_contains": ["verified"],
+      "manual": "Ответ замечает несовпадение отпечатка кода и не обновляет дату, отпечатки или индексы в режиме анализа."
+    }
+  ]
+}

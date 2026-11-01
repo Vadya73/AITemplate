@@ -1,0 +1,18 @@
+{
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative",
+  "attachmentFolderPath": "Docs/Attachments",
+  "userIgnoreFilters": [
+    ".git/",
+    ".venv/",
+    "Library/",
+    "Temp/",
+    "Logs/",
+    "obj/",
+    "bin/",
+    "node_modules/",
+    "Docs/_brain/lib/",
+    "Docs/_brain/tests/",
+    "Docs/_brain/index/"
+  ]
+}
